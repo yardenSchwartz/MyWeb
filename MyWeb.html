@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Yarden Schwartz site</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style>
+#menu
+  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li{
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+  
+  li a
+  {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover 
+  {
+    background-color: #111111;
+  }
+
+  </style>
+</head>
+<body class="body" >
+<div id="menu">
+<li><a href="#about">About Me</a></li>
+<li><a href="#photos">My Photos</a></li>
+<li><a href="#playlist">My Playlist</a></li>
+<li><a href="#like">Like</a></li>
+<li><a href="#qrcoder">QR code</a></li>
+<li><a href="#spa">Q&A</a></li>
+<li><a href="#contact">Contact Me</a></li>
+</div>
+
+<section id="about" class="section">
+
+<h1 class="center">Me</h1>
+<p>My name is Yarden Schwartz, I'm 20 years old and originally from Yoqneam Illit.
+<br>I am a third year student in the Information Systems Engeneering department in Ben Gurion University.</p> 
+<br/>
+<br/>
+<br/>
+</section>
+
+
+<section id="photos">
+  
+<h1 class="center">My photos</h1>
+<!--gallery of pictures-->
+<div class="gallery">
+<!--cannot click on the picture-->
+    <img src="yarden.jpeg" alt="Picture of me" width="300" height="400">
+  <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <!--can click on the picture-->
+  <a target="_blank" href="yarden.jpeg">
+    <img src="yarden.jpeg" alt="Picture of me" width="300" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<img src="yarden.jpeg" alt="Picture of me" width="300" height="400">
+<img src="yarden.jpeg" alt="Picture of me" width="300" height="400">
+<img src="yarden.jpeg" alt="Picture of me" width="300" height="400">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="playlist" class="section">
+<h1 class="center">My Playlist</h1>
+<br/>
+<br/>
+<iframe class="youtube"  width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=RDEMnQxGD5N3D5CZ2fMpTy08Ng&index=1" 
+frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+</iframe>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="like" class="section">
+<h1 class="center">Give Me A Like</h1>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="qrcoder" class="section">
+  <h1 class="center">Scan My Code</h1>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="spa" class="section">
+  <h1 class="center">Q&A</h1>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="contact" class="section">
+  <form>
+  <h1 class="center">Contact Me</h1>
+
+  <p>
+    <strong>Email: </strong>
+    <input type = "email" placeholder = "name@domain.com" 
+       required /> (name@domain.com)
+  </p>
+
+<p>
+  <strong>Subject: </strong>
+  <input type = "subject"/> 
+
+</p>
+
+<p>
+  <strong>Message: </strong>
+  <textarea name = "message" rows="4" cols="30"></textarea>
+</p>
+
+<p>
+  <input type = "submit" value = "Submit" />
+  <input type = "reset" value = "Clear" />
+</p>  
+</form>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });​
+ </script>
+</body>
+</html>
